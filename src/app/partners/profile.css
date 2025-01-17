@@ -1,0 +1,50 @@
+.profile form .input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 11px;
+}
+@media (min-width: 640px) {
+  .profile form .input {
+    font-size: 15px;
+  }
+}
+.profile form .input label {
+  color: #03133d;
+  font-weight: 700;
+}
+.profile form .input input:not([type=file]),
+.profile form .input .select:not(.multi-select) {
+  border: 1px solid #cdd0d8;
+  border-radius: 8px;
+  padding: 11px 17px;
+}
+@media (min-width: 640px) {
+  .profile form .input input:not([type=file]),
+  .profile form .input .select:not(.multi-select) {
+    padding: 16px 24px;
+  }
+}
+.profile form .input input:not([type=file]):focus,
+.profile form .input .select:not(.multi-select):focus {
+  outline: none;
+}
+.profile form .input input:not([type=file])::-moz-placeholder, .profile form .input .select:not(.multi-select)::-moz-placeholder {
+  color: #cdd0d8;
+}
+.profile form .input input:not([type=file])::placeholder,
+.profile form .input .select:not(.multi-select)::placeholder {
+  color: #cdd0d8;
+}
+.profile form .input-error {
+  font-size: 10px;
+  color: red;
+  font-weight: 500;
+}
+.profile .btns {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: end;
+  gap: 16px;
+}/*# sourceMappingURL=profile.css.map */

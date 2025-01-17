@@ -1,0 +1,68 @@
+.course-row {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  .course-name:nth-child(1) {
+    > div {
+      display: none;
+
+      @media (min-width: 640px) {
+        display: flex;
+      }
+    }
+  }
+  > td:nth-child(2) {
+    display: flex;
+    align-items: center;
+    > span:nth-child(1) {
+      @media (min-width: 640px) {
+        display: none;
+      }
+    }
+    > span:nth-child(2) {
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+
+      @media (min-width: 640px) {
+        display: none;
+      }
+    }
+    > span:nth-child(3) {
+      font-weight: 500;
+    }
+  }
+  > td:nth-child(3) {
+    >span:nth-child(1) {
+      @media (min-width: 640px) {
+        display: none;
+      }
+    }
+    >span:nth-child(2) {
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+
+      @media (min-width: 640px) {
+        display: none;
+      }
+    }
+    >span:nth-child(3) {
+      font-weight: 500;
+    }
+  }
+  td:nth-child(4) {
+    padding-bottom: 0.5rem;
+
+    @media (min-width: 640px) {
+      display: none !important;
+    }
+    > div {
+      display: flex;
+      /* >*{
+        max-width: 50%;
+      } */
+      @media (min-width: 640px) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,618 @@
+:root {
+  --abad-gold: #fdb614;
+}
+main.home-page {
+	/* index page */
+	/* contact page */
+}
+ main.home-page .hero {
+	 position: relative;
+	 height: 100vh;
+}
+ main.home-page .hero .intro {
+	 left: 50%;
+	 top: 50%;
+	 text-align: center;
+	 position: absolute;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 justify-content: center;
+	 gap: 1rem;
+	 transform: translate(-50%, -50%);
+	 color: white;
+	 width: max-content;
+	 max-width: 100%;
+	 padding: 0px 16px;
+}
+ main.home-page .hero .intro > h2 {
+	 font-size: 1.5rem;
+	/* 24px */
+	 line-height: 2rem;
+	/* 32px */
+	 font-weight: 500;
+}
+ main.home-page .hero .intro > h2 span:nth-of-type(2) {
+	 white-space: nowrap;
+	 color: var(--abad-gold);
+}
+ @media (min-width: 640px) {
+	 main.home-page .hero .intro > h2 {
+		 max-width: fit-content;
+	}
+}
+ main.home-page .hero .intro > h4 {
+	 font-size: 0.875rem;
+	/* 14px */
+	 line-height: 1.5rem;
+	/* 20px */
+	 font-weight: 300;
+	 max-width: 650px;
+}
+ @media (min-width: 768px) {
+	 main.home-page .hero .intro > h4 {
+		 font-size: 1.125rem;
+		 line-height: 1.75rem;
+	}
+}
+ @media (min-width: 640px) {
+	 main.home-page .hero .intro > h4 {
+		 padding: 28px 0;
+	}
+}
+ main.home-page .hero .intro > a {
+	 display: flex;
+	 padding: 0.5rem;
+	 padding-left: 1rem;
+	 padding-right: 1rem;
+	 gap: 1.25rem;
+	 align-items: center;
+	 border-radius: 0.75rem;
+	 font-size: 0.875rem;
+	 line-height: 1.25rem;
+	 color: #000;
+	 background-color: var(--abad-gold);
+}
+ @media (min-width: 768px) {
+	 main.home-page .hero .intro > a {
+		 font-size: 1rem;
+		 line-height: 1.5rem;
+	}
+}
+ main.home-page .hero .intro > a span {
+	 font-weight: 500;
+}
+ main.home-page .hero .intro > a svg {
+	 color: #000;
+	 transform: rotate(180deg);
+}
+ main.home-page .hero .back-shape {
+	 overflow: hidden;
+	 width: 100%;
+	 position: relative;
+	 z-index: -10;
+	 height: 100%;
+}
+ main.home-page .hero .back-shape .first {
+	 width: 100%;
+	 height: 100%;
+	 object-fit: cover;
+}
+ main.home-page .hero .back-shape .second {
+	 width: 80px;
+	 position: absolute;
+	 top: 8vh;
+	 right: 0;
+}
+ @media (min-width: 768px) {
+	 main.home-page .hero {
+		 min-height: 600px;
+		 height: auto;
+	}
+	 main.home-page .hero .intro h2 {
+		 font-size: 1.875rem;
+		/* 30px */
+		 line-height: 2.25rem;
+		/* 36px */
+	}
+	 main.home-page .hero .back-shape {
+		 min-height: 600px;
+		 height: auto;
+	}
+	 main.home-page .hero .back-shape .first {
+		 height: auto;
+		 min-height: 600px;
+	}
+	 main.home-page .hero .back-shape .second {
+		 width: 9rem;
+		/* 144px */
+		 top: 10vh;
+	}
+}
+ @media (min-width: 1024px) {
+	 main.home-page .hero .intro h2 {
+		 font-size: 2.25rem;
+		/* 36px */
+		 line-height: 2.5rem;
+		/* 40px */
+	}
+}
+ @media (min-width: 1280px) {
+	 main.home-page .hero .intro h2 {
+		 font-size: 3rem;
+		/* 48px */
+		 line-height: 1;
+	}
+	 main.home-page .hero .intro h4 {
+		 font-size: 1.5rem;
+		/* 24px */
+		 line-height: 2rem;
+		/* 32px */
+		 line-height: 2.5rem;
+	}
+}
+ main.home-page .courses-sec {
+	 width: 100%;
+	 height: fit-content;
+	 position: relative;
+	 margin-top: -80px;
+}
+ main.home-page .courses-sec > img {
+	 display: none;
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 width: 294px;
+	 transform: translateX(45%);
+}
+ @media (min-width: 1280px) {
+	 main.home-page .courses-sec > img {
+		 display: block;
+	}
+}
+ main.home-page .courses-sec .home-courses .courses-preview-mode {
+	 color: #0f1416;
+}
+ main.home-page .courses-sec .home-courses .search-filter button {
+	 background-clip: text;
+	 color: transparent;
+	 background-image: linear-gradient(83.79deg, #1b45b4 3.25%, #1c2792 96.85%);
+}
+ main.home-page .courses-sec .home-courses .search-filter h3, main.home-page .courses-sec .home-courses .search-filter h4 {
+	 color: #151318;
+}
+ main.home-page .courses-sec .home-courses .search-filter label {
+	 font-family: "Noto Sans Arabic", sans-serif;
+	 color: #8a8394;
+	 font-size: 14px;
+	 font-weight: 500;
+}
+ main.home-page .courses-sec .home-courses table td {
+	 color: #3f3e43;
+}
+ main.home-page .courses-sec .home-courses table th {
+	 color: white;
+}
+ main.home-page .courses-sec .home-courses table td, main.home-page .courses-sec .home-courses table th {
+	 display: block;
+	 padding: 2px;
+	 font-size: 12px;
+	 font-weight: 500;
+	 border: 1px solid transparent;
+}
+ main.home-page .courses-sec .home-courses table td.course-name, main.home-page .courses-sec .home-courses table th.course-name {
+	 padding-top: 4px;
+	 font-size: 14px;
+	 font-weight: 500;
+	 flex-direction: column;
+}
+ main.home-page .courses-sec .home-courses table td.course-name > div, main.home-page .courses-sec .home-courses table th.course-name > div {
+	 font-size: 10px !important;
+	 gap: 12px;
+}
+ main.home-page .courses-sec .home-courses table td.course-name > div span, main.home-page .courses-sec .home-courses table th.course-name > div span {
+	 display: flex;
+	 align-items: center;
+	 gap: 3px;
+}
+ main.home-page .courses-sec .home-courses table td.course-name > div span.online, main.home-page .courses-sec .home-courses table th.course-name > div span.online {
+	 color: #0dc00d;
+}
+ main.home-page .courses-sec .home-courses table td.course-name > div span.in-person, main.home-page .courses-sec .home-courses table th.course-name > div span.in-person {
+	 color: #df2121;
+}
+ main.home-page .courses-sec .home-courses table td.course-name > div span:nth-child(2), main.home-page .courses-sec .home-courses table th.course-name > div span:nth-child(2) {
+	 color: #1b39a6;
+}
+ main.home-page .courses-sec .home-courses table td.course-name p, main.home-page .courses-sec .home-courses table th.course-name p {
+	 font-weight: 700;
+}
+ @media (min-width: 768px) {
+	 main.home-page .courses-sec .home-courses table td.course-name, main.home-page .courses-sec .home-courses table th.course-name {
+		 font-size: 14px;
+	}
+	 main.home-page .courses-sec .home-courses table td.course-name > div, main.home-page .courses-sec .home-courses table th.course-name > div {
+		 order: 2 !important;
+		 font-size: 14px;
+	}
+	 main.home-page .courses-sec .home-courses table td.course-name p, main.home-page .courses-sec .home-courses table th.course-name p {
+		 font-weight: 500;
+		 order: 1 !important;
+	}
+}
+ @media (min-width: 768px) {
+	 main.home-page .courses-sec .home-courses table td, main.home-page .courses-sec .home-courses table th {
+		 display: table-cell;
+		 padding: 16px !important;
+	}
+	 main.home-page .courses-sec .home-courses table td.course-start-date, main.home-page .courses-sec .home-courses table th.course-start-date {
+		 display: table-cell;
+	}
+}
+ main.home-page .courses-sec .home-courses table td:nth-child(3), main.home-page .courses-sec .home-courses table td:nth-child(2) {
+	 font-size: 12px;
+	 font-weight: 400;
+}
+ @media (min-width: 768px) {
+	 main.home-page .courses-sec .home-courses table td:nth-child(3), main.home-page .courses-sec .home-courses table td:nth-child(2) {
+		 font-weight: 500;
+	}
+}
+ main.home-page .courses-sec .home-courses table .btns {
+	 display: flex;
+	 align-items: center;
+	 gap: 8px;
+	 font-size: 10px;
+	 font-weight: 500;
+}
+ main.home-page .courses-sec .home-courses table .btns button {
+	 padding: 6px 12px;
+	 border-radius: 4px;
+	 display: flex;
+	 align-items: center;
+	 gap: 8px;
+}
+ main.home-page .courses-sec .home-courses table .btns > * {
+	 flex: 1;
+}
+ main.home-page .courses-sec .home-courses table .btns > * > * {
+	 width: 100%;
+	 justify-content: center;
+}
+ @media (min-width: 768px) {
+	 main.home-page .courses-sec .home-courses table .btns {
+		 font-size: 12px;
+	}
+	 main.home-page .courses-sec .home-courses table .btns > * {
+		 flex: auto;
+	}
+}
+ main.home-page .courses-sec .home-courses table .btns a:nth-child(1) button {
+	 background-color: #fdb614;
+	 color: black;
+}
+ main.home-page .courses-sec .home-courses table .btns div:nth-child(2) button {
+	 background: linear-gradient(83.79deg, #1b45b4 3.25%, #1c2792 96.85%);
+	 color: white;
+}
+ main.home-page .courses-sec .home-courses table td {
+	 font-size: 14px;
+}
+ main.home-page .courses-sec .home-courses > .show-all {
+	 background: linear-gradient(to right, #1b45b4, #1c2792);
+}
+ @media (min-width: 640px) {
+	 main.home-page .courses-sec {
+		 margin-top: 0;
+	}
+}
+ main.home-page .plan {
+	 position: relative;
+	 padding: 40px;
+	 overflow: hidden;
+}
+ main.home-page .plan > img {
+	 object-fit: cover;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 z-index: -10;
+}
+ main.home-page .plan > div {
+	 display: flex;
+	 padding-top: 1.5rem;
+	 flex-direction: column;
+	 gap: 1.5rem;
+	 justify-content: space-between;
+	 max-width: 1024px;
+	 margin: 0 auto;
+}
+ @media (min-width: 768px) {
+	 main.home-page .plan > div {
+		 padding-top: 0;
+		 flex-direction: row;
+	}
+}
+ main.home-page .plan > div .cards-title {
+	 display: flex;
+	 align-items: center;
+}
+ @media (min-width: 768px) {
+	 main.home-page .plan > div .cards-title {
+		 width: 45%;
+	}
+}
+ main.home-page .plan > div .cards {
+	 display: flex;
+	 flex-direction: row;
+	 flex-wrap: wrap;
+	 margin: 0 auto;
+	 gap: 1.5rem;
+	 max-width: 500px;
+}
+ main.home-page .plan > div .cards .card {
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 gap: 8px;
+	 border-radius: 12px;
+	 text-align: center;
+	 background-color: white;
+	 padding: 20px 14px;
+	 width: 210px;
+	 margin: auto;
+}
+ main.home-page .plan > div .cards .card .img {
+	 border-radius: 50%;
+	 padding: 18px;
+	 background-color: #fff2ec;
+	 width: fit-content;
+}
+ main.home-page .plan > div .cards .card figcaption h4 {
+	 font-weight: bold;
+	 font-size: 24px;
+	 margin-bottom: 6px;
+}
+ main.home-page .plan > div .cards .card figcaption p {
+	 font-size: 15px;
+	 line-height: 1.5;
+}
+ main.home-page .reviews {
+	 overflow: hidden;
+	 position: relative;
+	 padding: 2.5rem;
+}
+ main.home-page .reviews > img {
+	 object-fit: cover;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 z-index: -10;
+}
+ main.home-page .reviews > div {
+	 width: 100%;
+	 margin: 0 auto;
+	 display: flex;
+	 flex-direction: column;
+	 gap: 1.25rem;
+	 max-width: 1024px;
+}
+ @media (min-width: 640px) {
+	 main.home-page .reviews > div {
+		 max-width: 640px;
+	}
+}
+ @media (min-width: 768px) {
+	 main.home-page .reviews > div {
+		 max-width: 768px;
+	}
+}
+ @media (min-width: 1024px) {
+	 main.home-page .reviews > div {
+		 max-width: 1024px;
+	}
+}
+ @media (min-width: 1280px) {
+	 main.home-page .reviews > div {
+		 max-width: 1280px;
+	}
+}
+ @media (min-width: 1536px) {
+	 main.home-page .reviews > div {
+		 max-width: 1536px;
+	}
+}
+ main.home-page .reviews > div > h3 {
+	 font-size: 1.5rem;
+	 line-height: 2rem;
+	 font-weight: 700;
+	 text-align: center;
+	 color: #172327;
+}
+ @media (min-width: 768px) {
+	 main.home-page .reviews > div > h3 {
+		 font-size: 2.25rem;
+		 line-height: 2.5rem;
+	}
+}
+ main.home-page .reviews > div > h3 span:nth-of-type(1) {
+	 color: var(--abad-gold);
+}
+ main.home-page .reviews > div > h3 span:nth-of-type(2) {
+	 display: inline-block;
+	 padding-top: 0.5rem;
+	 padding-bottom: 0.5rem;
+}
+ main.home-page .reviews > div .cards {
+	 width: 100%;
+}
+ main.home-page .reviews > div .cards .cards-wrapper .card {
+	 padding: 20px;
+}
+ main.home-page .reviews > div .cards .cards-wrapper .card .card-wrapper {
+	 padding: 20px;
+	 background-color: white;
+	 display: flex;
+	 flex-direction: column;
+	 gap: 20px;
+	 border-radius: 12px;
+}
+ main.home-page .reviews > div .cards .cards-wrapper .card .card-wrapper .review-details {
+	 display: flex;
+	 align-items: center;
+	 gap: 8px;
+	 font-family: "Noto Sans Arabic", sans-serif;
+}
+ main.home-page .reviews > div .cards .cards-wrapper .card .card-wrapper .review-details h4 {
+	 font-size: 18px;
+	 font-weight: bold;
+	 color: #1e1e1e;
+}
+ main.home-page .reviews > div .cards .cards-wrapper .card .card-wrapper .review-details p {
+	 font-size: 14px;
+}
+ main.home-page .reviews > div .cards .cards-wrapper .card .card-wrapper .review-text {
+	 color: #172327;
+	 font-size: 15px;
+	 line-height: 1.6;
+	 font-weight: 400;
+}
+ main.home-page .reviews > div .cards .cards-wrapper .card .card-wrapper .review-stars {
+	 display: flex;
+	 align-items: center;
+	 gap: 18px;
+}
+ main.home-page .reviews > div .cards .cards-wrapper .card .card-wrapper .review-stars img {
+	 width: fit-content;
+}
+ main.home-page .reviews > div .cards .swiper-btns {
+	 display: flex;
+	 margin-top: 2rem;
+	 gap: 2rem;
+	 justify-content: center;
+}
+ main.home-page .reviews > div .cards .reviewsBtn {
+	 cursor: pointer;
+}
+ main.home-page .reviews > div .cards .swiper1-btn {
+	 width: 40px;
+	 height: 40px;
+	 display: flex;
+	 position: relative;
+	 justify-content: center;
+	 align-items: center;
+	 border-radius: 50%;
+}
+ main.home-page .reviews > div .cards .swiper1-btn::before, main.home-page .reviews > div .cards .swiper1-btn::after {
+	 content: "";
+	 z-index: -1;
+	 left: 0;
+	 top: 0;
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 border-radius: 50%;
+}
+ main.home-page .reviews > div .cards .swiper1-btn::before {
+	 background: linear-gradient(to right, #1c2792, #1b45b4);
+	 transition: 0.3s;
+	 opacity: 1;
+}
+ main.home-page .reviews > div .cards .swiper1-btn::after {
+	 background: linear-gradient(to right, #29317e, #2a4ba7);
+	 opacity: 0;
+}
+ main.home-page .reviews > div .cards .swiper1-btn.animate-review-btn::before {
+	 animation: reduceOpacityAni 0.3s;
+}
+ main.home-page .reviews > div .cards .swiper1-btn.animate-review-btn::after {
+	 animation: growOpacityAni 0.3s;
+}
+ @keyframes growOpacityAni {
+	 from {
+		 opacity: 0;
+	}
+	 to {
+		 opacity: 1;
+	}
+}
+ @keyframes reduceOpacityAni {
+	 from {
+		 opacity: 1;
+	}
+	 to {
+		 opacity: 0;
+	}
+}
+ main.home-page .reviews > div .cards .swiper1-btn:focus-within {
+	/* transition: 1s;
+	 background: #1e1e1e80;
+	 */
+}
+ main.home-page .articles {
+	/* padding: 12px;
+	 */
+	/* max-width: 320px;
+	 */
+}
+ main.home-page .articles article {
+	 margin: 0 auto;
+	/* @media (min-width: 767px) {
+		 width: 32%;
+	}
+	 */
+}
+ main.home-page .articles article .article-wrapper {
+	 border-radius: 12px;
+	 display: flex;
+	 flex-direction: column;
+	 gap: 12px;
+	 box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+ main.home-page .articles article .article-wrapper img {
+	 width: 100%;
+}
+ main.home-page .articles article .article-wrapper > div:nth-child(2) {
+	 padding: 12px;
+	 display: flex;
+	 flex-direction: column;
+	 gap: 8px;
+	 padding-bottom: 20px;
+}
+ main.home-page .articles article .article-wrapper > div:nth-child(2) p {
+	 font-family: "Noto Sans Arabic", sans-serif;
+	 color: #172327;
+}
+ main.home-page .articles article .article-wrapper > div:nth-child(2) h3 {
+	 font-size: 18px;
+	 color: #1e1e1e;
+	 font-weight: 500;
+}
+ main.home-page .contact form .input .placeholder {
+	 position: absolute;
+	 right: 48px;
+	 top: 50%;
+	 transform: translateY(-50%);
+	 transition: 0.3s;
+	 pointer-events: none;
+}
+ main.home-page .contact form .input input {
+	 flex: 1;
+	 color: white;
+}
+ main.home-page .contact form .input input:focus::placeholder {
+	 display: none;
+}
+ main.home-page .contact form .input input:not(:placeholder-shown) + span, main.home-page .contact form .input input:focus + span {
+	 font-size: 10px;
+	 transform: translateY(-170%) !important;
+}
+ 
+body:has(.auth.flex) {
+  height: 100vh;
+  overflow: hidden;
+}

@@ -1,0 +1,95 @@
+.popups .login {
+  background: linear-gradient(83.79deg, #1b45b4 3.25%, #1c2792 96.85%);
+  width: 100%;
+  border-radius: 10px;
+  line-height: 22px;
+  padding: 10px 19px;
+  font-weight: 700;
+  font-size: 10px;
+  color: white;
+}
+@media (min-width: 768px) {
+  .popups .login {
+    padding: 16px 32px;
+    font-size: 16px;
+  }
+}
+
+.popups .payment-options .input {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.popups .payment-options .input input {
+  border: 1px solid #cdd0d8;
+  border-radius: 8px;
+  flex: 1;
+  padding: 14px;
+  margin-top: 8px;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: #cdd0d8;
+  }
+}
+
+.popups .payment-options .input label {
+  color: #4F4B56;
+  font-weight: 500;
+}
+
+
+.popups .payment-confirmation {
+  h2 {
+    font-weight: 700;
+    font-size: 11px;
+    color: #03133d;
+
+    @media (min-width: 640px) {
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+    }
+  }
+  p {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #68718b;
+
+    @media (min-width: 640px) {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+  }
+  > button {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    border-radius: 1rem;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+    background: #fdb614;
+    color: #282828;
+
+    @media (min-width: 640px) {
+      padding-top: 0.875rem;
+      padding-bottom: 0.875rem;
+      width: fit-content;
+    }
+  }
+}
+
+.popups .payment-options .discount-input input:placeholder-shown{
+  opacity: 70%;
+}
+@keyframes fullRotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}

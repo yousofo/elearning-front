@@ -1,0 +1,120 @@
+.basket {
+  .item-title {
+    border-bottom: 1px solid #ededed;
+    color: #212529;
+    font-weight: 700;
+    span {
+      padding-right: 16px;
+    }
+  }
+  table{
+    width: 100%;
+    td,th{
+      text-align: start;
+      padding: 16px 0;
+    }
+    tbody{
+      tr:not(:nth-child(1)){
+        border-top: 1px solid #EDEDED
+      }
+    }
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+    color: #3f3e43;
+    gap: 8px;
+    > div {
+      background-color: white;
+      display: flex;
+      border-radius: 8px;
+      padding: 10px;
+      flex-direction: column;
+      gap: 4px;
+      font-weight: 500;
+      position: relative;
+      @media (max-width:639px) {
+        box-shadow: 5px 4px 40px 0px rgba(0, 0, 0, 0.1);
+        img{
+          max-width: 60px;
+        }
+      }
+      @media (min-width: 640px) {
+        flex-direction: row;
+        gap: 0;
+        align-items: center;
+        padding: 16px 0;
+        > *:not(svg) {
+          width: 33%;
+        }
+      }
+      p {
+        color: #3f3e43;
+        font-size: 13px;
+      }
+      span {
+        color: #626262;
+        font-size: 15px;
+      }
+      svg {
+        position: absolute;
+        left: 0;
+        cursor: pointer;
+        @media (max-width:639px) {
+          display: none;
+        }
+      }
+    }
+    @media (min-width: 640px) {
+      gap: 0;
+      > div:not(:nth-last-child(1)) {
+        border-bottom: 1px solid #ededed;
+      }
+    }
+  }
+  .purchase {
+    button {
+      background: linear-gradient(83.79deg, #1b45b4 3.25%, #1c2792 96.85%);
+    }
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    label {
+      color: #03133d;
+      font-weight: 700;
+    }
+    input,
+    .select,
+    textarea {
+      border-radius: 8px;
+      flex: 1;
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        color: #cdd0d8;
+      }
+    }
+    input::placeholder{
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  .discount-btn{
+    background: linear-gradient(83.79deg, #1B45B4 3.25%, #1C2792 96.85%);
+  }
+  .discount-btn.disabled{
+    opacity: .1;
+  }
+}
+.drop-shadow-abad {
+  box-shadow: 5px 4px 40px 0px rgba(0, 0, 0, 0.1);
+}
+.drop-shadow-abad-2 {
+  box-shadow: 0px 2px 48px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 640px) {
+  .sm\:drop-shadow-abad {
+    box-shadow: 5px 4px 40px 0px rgba(0, 0, 0, 0.1);
+  }
+}

@@ -1,0 +1,59 @@
+.profile form .input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 11px;
+}
+@media (min-width: 640px) {
+  .profile form .input {
+    font-size: 15px;
+ }
+}
+.profile form .input label {
+  color: #03133d;
+  font-weight: 700;
+}
+.profile form .input input, .profile form .input .select, .profile form .input textarea {
+  border: 1px solid #cdd0d8;
+  border-radius: 8px;
+  padding: 11px 17px;
+}
+@media (min-width: 640px) {
+  .profile form .input input, .profile form .input .select, .profile form .input textarea {
+    padding: 16px 24px;
+ }
+}
+.profile form .input input:focus, .profile form .input .select:focus, .profile form .input textarea:focus {
+  outline: none;
+}
+.profile form .input input::placeholder, .profile form .input .select::placeholder, .profile form .input textarea::placeholder {
+  color: #cdd0d8;
+}
+.profile form .input-error {
+  font-size: 10px;
+  color: red;
+  font-weight: 500;
+}
+.profile .btns {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: end;
+  gap: 16px;
+}
+@media (max-width: 639px) {
+  .profile .btns * {
+    width: 100%;
+    text-align: center;
+ }
+  .profile .btns *:nth-child(1) {
+    order: 2;
+ }
+}
+.profile .btns * {
+  padding: 12px 24px;
+  border-radius: 16px;
+}
+.profile .btns *:nth-child(1) {
+  border: 1px solid #a9a9a9;
+}

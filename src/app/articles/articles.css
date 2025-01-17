@@ -1,0 +1,30 @@
+.articles article {
+  /* padding: 12px; */
+  /* max-width: 320px; */
+  margin: 0 auto;
+  /* @media (min-width: 767px) {
+    width: 32%;
+  } */
+}
+.articles article .article-wrapper {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+.articles article .article-wrapper img {
+  width: 100%;
+}
+.articles article .article-wrapper > div:nth-child(2) {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 20px;
+}
+.articles article .article-wrapper > div:nth-child(2) p {
+  font-family: "Noto Sans Arabic", sans-serif;
+  color: #172327;
+}
+.articles article .article-wrapper > div:nth-child(2) h3 {
+  font-size: 18px;
+  color: #1e1e1e;
+  font-weight: 500;
+}/*# sourceMappingURL=articles.css.map */

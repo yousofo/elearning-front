@@ -1,0 +1,13 @@
+.social-share-links{
+  a{
+    border: 1px solid #D8D1E2;
+    border-radius: 50%;
+    padding: 10px;
+    
+  }
+}
+article ol li{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}

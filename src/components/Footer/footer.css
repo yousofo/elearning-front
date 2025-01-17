@@ -1,0 +1,39 @@
+footer {
+  line-height: 1;
+}
+footer .social-links > svg {
+  cursor: pointer;
+}
+footer h4 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+@media (min-width: 768px) {
+  footer h4 {
+    font-size: 18px;
+  }
+}
+footer li {
+  flex-direction: column;
+  display: flex;
+  gap: 15px;
+  font-size: 15px;
+}
+footer li a,
+footer li button {
+  font-weight: 300;
+  text-align: start;
+}
+
+@media (max-width: 639px) {
+  .footer-contact {
+    order: 2;
+  }
+  .footer-general {
+    order: 3;
+  }
+  .footer-pages {
+    order: 4;
+  }
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,139 @@
+.enlist {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f0f6ec;
+  color: #6ea641;
+}
+@media (min-width: 768px) {
+  .enlist {
+    font-size: 13px;
+  }
+}
+
+table {
+  color: #3f3e43;
+  font-weight: 500 !important;
+}
+table th,
+table td {
+  font-weight: inherit;
+  font-size: 12px;
+  padding: 16px;
+  text-align: start;
+}
+table td:nth-child(1) {
+  font-size: 14px;
+}
+table td:nth-child(2) {
+  font-weight: 700;
+}
+
+.accordion {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  gap: 12px;
+}
+@media (min-width: 768px) {
+  .accordion {
+    gap: 20px;
+  }
+}
+
+.handle-html-styles ol,
+.handle-html-styles ul {
+  padding-right: 20px;
+}
+.handle-html-styles ol {
+  list-style: decimal;
+}
+.handle-html-styles ul {
+  list-style: disc;
+}
+.handle-html-styles a:link {
+  color: blue; /* Default color for unvisited links */
+  text-decoration: underline; /* Underline by default */
+}
+.handle-html-styles a:visited {
+  color: purple; /* Default color for visited links */
+}
+.handle-html-styles a:hover {
+  color: red; /* Color when the link is hovered over */
+  text-decoration: underline; /* Underline on hover */
+}
+.handle-html-styles a:active {
+  color: darkred; /* Color when the link is clicked */
+}
+.handle-html-styles h1 {
+  font-size: 2em; /* Default size for <h1> */
+}
+.handle-html-styles h2 {
+  font-size: 1.5em; /* Default size for <h2> */
+}
+.handle-html-styles h3 {
+  font-size: 1.17em; /* Default size for <h3> */
+}
+.handle-html-styles h4 {
+  font-size: 1em; /* Default size for <h4> */
+}
+.handle-html-styles h5 {
+  font-size: 0.83em; /* Default size for <h5> */
+}
+.handle-html-styles h6 {
+  font-size: 0.67em; /* Default size for <h6> */
+}
+
+.accordion-item {
+  /* box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 -1px 2px -1px rgb(0 0 0 / 0.1);
+   */
+  box-shadow: 5px 4px 30px 0px rgba(0, 0, 0, 0.078);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.accordion-item svg {
+  transition: 0.3s;
+}
+.accordion-item.active .accordion-header svg {
+  rotate: 180deg;
+}
+.accordion-item.active .accordion-content {
+  max-height: 1200px;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-header {
+  color: #252525;
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #f9fbff;
+}
+
+.accordion-content {
+  max-height: 0;
+  transition: 0.3s max-height;
+  background-color: #fff;
+}
+.accordion-content .wrapper {
+  padding: 15px;
+}/*# sourceMappingURL=accordion.css.map */

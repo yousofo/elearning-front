@@ -1,0 +1,38 @@
+footer {
+  line-height: 1;
+  .social-links {
+    & > svg {
+      cursor: pointer;
+    }
+  }
+  h4 {
+    font-size: 17px;
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  li {
+    flex-direction: column;
+    a,
+    button {
+      font-weight: 300;
+      text-align: start;
+    }
+    display: flex;
+    gap: 15px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 639px) {
+  .footer-contact {
+    order: 2;
+  }
+  .footer-general {
+    order: 3;
+  }
+  .footer-pages {
+    order: 4;
+  }
+}

@@ -1,0 +1,32 @@
+.articles {
+  article {
+    /* padding: 12px; */
+    /* max-width: 320px; */
+    margin: 0 auto;
+    /* @media (min-width: 767px) {
+      width: 32%;
+    } */
+    .article-wrapper {
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+      img {
+        width: 100%;
+      }
+      > div:nth-child(2) {
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-bottom: 20px;
+        p {
+          font-family: "Noto Sans Arabic", sans-serif;
+          color: #172327;
+        }
+        h3 {
+          font-size: 18px;
+          color: #1e1e1e;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
